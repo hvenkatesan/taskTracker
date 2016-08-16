@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Task Tracker</title>
+     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css"/>
+     <link rel="stylesheet" type="text/css" href="taskTracker.css"/>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+     <script src="taskTracker.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+      <header>
+        <h1 class="title">Task Tracker</h1>
+        <p class="version">v2.0</p>
+      </header>
+      <section class="input">
+        <h2 class="instruction">Create a Task</h2>
+        <form id="task">
+          <label class="form-label"><strong>Task Name</strong></label><br>
+          <input class="form-enter name" type="text" name="name">
+          <br>
+          <label class="form-label"><strong>Date</strong></label><br>
+          <input class="form-enter date" type="text" name="date" id="date">
+          <br>
+          <label class="form-label"><strong>Assigned To</strong></label><br>
+          <input class="form-enter assigned" type="text" name="assigned">
+          <br>
+          <input class="submit" type="submit" value="Submit">
+        </form>
+      </section>
+      <section class="output">
+        <h2 class="existing">Existing Tasks</h2>
+        <div class="task-wrapper">
+        </div>
+      </section>
+</div>
+
+</body>
+</html>
